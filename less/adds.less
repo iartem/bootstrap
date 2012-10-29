@@ -311,6 +311,16 @@ td .tile {
 }
 
 // Maps
+.map {
+    &.mini { width: 200px; }
+    &.small { width: 300px; }
+    &.medium { width: 500px; }
+    &.large { width: 700px; }
+    img {
+        max-width: none;
+    }
+}
+
 @-webkit-keyframes rotate {
    from {
        -webkit-transform: rotate(0deg);
