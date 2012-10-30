@@ -238,6 +238,10 @@ textarea.input-xxlarge    { min-height: 130px; }
     }
 }
 
+td > .pictured {
+    padding: 5px 0;
+}
+
 .relative { position: relative; }
 .dimmer { display: none; }
 .dim-all() {
@@ -477,4 +481,33 @@ table.table-vertical-middle {
     tbody > tr > td {
         vertical-align: middle;
     }
+}
+
+.iconable {
+    position: relative;
+    .icona {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        display: none;
+        i {
+            font-size: 40px;
+        }
+    }
+    &:hover, &.active {
+        cursor: pointer;
+        .icona { display: block; }
+    }
+    &.white {
+        .icona {
+            color: @white;
+            i:hover {
+                color: #333;
+            }
+        }
+    }
+}
+
+.thumbnails.four-in-row > li:nth-child(4n+1) {
+    margin-left: 0px;
 }
