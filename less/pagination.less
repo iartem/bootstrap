@@ -3,6 +3,33 @@
 // --------------------------------------------------
 
 
+table.table-sortable thead th{
+    .sortable-title {
+        float: left;
+        margin-right: 10px;
+    }
+    .sortable {
+        position: relative;
+        float: right;
+        a.sort {
+            position: absolute;
+            top: 50%;
+            right: -3px;
+            height: 25px;
+            &.up { margin-top: -5px; }
+            &.down { margin-top: 5px; }
+
+            i { font-size: 12px; line-height: 12px; height: 12px; }
+            font-size: 12px; line-height: 12px; height: 12px;
+
+            text-decoration: none;
+            color: @grayLighter;
+            &.active { color: @grayLight; }
+            &:hover { color: @grayDark; }
+        }
+    }
+}
+
 .pagination {
   height: @baseLineHeight * 2;
   margin: @baseLineHeight 0;
