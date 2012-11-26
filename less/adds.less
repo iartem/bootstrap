@@ -511,3 +511,13 @@ table.table-vertical-middle {
 .thumbnails.four-in-row > li:nth-child(4n+1) {
     margin-left: 0px;
 }
+
+
+.tool_image(@color: @lead){
+    img {
+        background-color: @color;
+        &:hover, &.active {
+            background-color: darken(@color, 20%);
+        }
+    }
+}
